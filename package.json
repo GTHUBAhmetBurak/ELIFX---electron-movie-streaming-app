@@ -1,0 +1,16 @@
+{
+  "name": "elifproje-flix",
+  "version": "1.0.0",
+  "description": "elifproje ve SınavLink.com altyapılı film uygulaması",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Elifx --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "author": "Kral",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}

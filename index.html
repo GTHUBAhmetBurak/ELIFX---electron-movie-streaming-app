@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elifx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <h1 class="splash-logo">Elifx</h1>
+        <p class="splash-credit">product by ahmet burak tavuz</p>
+    </div>
+
+    <header id="header">
+        <h1 class="logo">Elifx</h1>
+        <nav>
+            <button id="home-btn" class="active">Filmler</button>
+            <button id="tv-btn">Diziler</button>
+            <button id="fav-btn">Favorilerim</button>
+            <button id="history-btn">Geçmiş</button>
+        </nav>
+        <form id="form" style="position: relative;">
+            <input type="text" id="search" class="search" placeholder="Film veya Dizi Ara...">
+            <div id="search-results" class="search-results-container"></div>
+        </form>
+    </header>
+
+    <div id="hero-banner" class="hero">
+        <div class="hero-content">
+            <h2 id="hero-title">Yükleniyor...</h2>
+            <p id="hero-desc">...</p>
+            <div class="hero-buttons">
+                <button class="play-btn"><i class="fas fa-play"></i> Oynat</button>
+                <button class="info-btn"><i class="fas fa-info-circle"></i> Daha Fazla Bilgi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- KALDIĞIN YERDEN DEVAM ET ŞERİDİ (YENİ) -->
+    <div id="continue-watching-section" style="display: none; padding: 2rem 3rem 0 3rem;">
+        <h2 style="color: #e50914; margin-bottom: 15px; font-size: 1.5rem;"><i class="fas fa-history"></i> Kaldığın Yerden Devam Et</h2>
+        <div id="continue-watching-list" class="categories" style="margin-top: 0; padding: 0; gap: 20px;"></div>
+    </div>
+
+    <div class="categories" id="tags" style="margin-top: 20px;"></div>
+
+    <main id="main"></main>
+
+    <div class="pagination">
+        <button id="prev-page">Önceki Sayfa</button>
+        <span id="current-page">Sayfa 1</span>
+        <button id="next-page">Sonraki Sayfa</button>
+    </div>
+
+    <div id="trailerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
